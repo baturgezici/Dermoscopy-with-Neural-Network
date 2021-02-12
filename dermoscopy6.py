@@ -147,7 +147,7 @@ plt.show()
 print(clr)
 
 #%%
-
+# SAVING THE MODEL AND WEIGHTS
 import h5py
 from keras.models import model_from_json
 
@@ -159,6 +159,7 @@ model.save_weights("model.h5")
 
 json_file.close()
 #%%
+# LOADING MODEL AND WEIGHTS
 from keras.models import Sequential
 from keras.layers import Dense
 from tensorflow.keras.models import model_from_json
