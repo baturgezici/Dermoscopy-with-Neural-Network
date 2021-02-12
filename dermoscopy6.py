@@ -176,11 +176,7 @@ loaded_model.compile(
     metrics=['accuracy']
 )
 
-#%%
-pluton = x_test[3].reshape(-1,28,28,1)
-print(pluton)
-model_accx = loaded_model.predict(pluton)
-print(label_mapping[np.argmax(model_accx)])
+
 #%%
 
 from tkinter import *
